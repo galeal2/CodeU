@@ -49,7 +49,7 @@ class LinkedList:
            ptr = ptr.next
         ptr.next = Node(ptr_c.item, None)
 
-        
+# find kth to last element in a linkedlist        
 def find_kth_to_last(ll, k):
     if ll.is_empty():
         return 'LinkedList empty'
