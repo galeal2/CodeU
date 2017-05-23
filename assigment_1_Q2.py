@@ -90,9 +90,9 @@ def main():
     ll.add(0)
     ll.add(5)
     print(ll)
-    print(find_kth_to_last(ll, 100))
-    print(find_kth_to_last(ll2, 2))
-    print(find_kth_to_last(ll, 3))
+    assert find_kth_to_last(ll, 100) == 0, "Incorrect"
+    assert find_kth_to_last(ll2, 2) == 'LinkedList empty', "Incorrect"
+    assert find_kth_to_last(ll, 3) == 3, "Incorrect"
 
 if __name__ == "__main__":
     main()
