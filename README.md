@@ -1,2 +1,2 @@
 # CodeU
-CodeU assigments
+CodeU assignments
