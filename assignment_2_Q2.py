@@ -3,6 +3,8 @@ from assignment_2_Q1 import find_ancestors
 
 # find the lowest common ancestor
 def find_common_ancestor(BT, node1, node2):
+    """ the function takes a BST and two nodes from the tree
+        and find their lowest common ancestor """
     n1_ancestors = set(find_ancestors(BT, node1)+[node1])
     n2_ancestors = set(find_ancestors(BT, node2)+[node2])
     if not n1_ancestors.intersection(n2_ancestors):
