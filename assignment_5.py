@@ -31,7 +31,8 @@ def find_order(word1, word2, alphabet):
         Output: returns the first two letters (as a string) that are different in the given words
     '''
     order = ''
-    for c in range(1,len(word1)):
+    word_range = min(len(word1), len(word2))
+    for c in range(1,word_range):
         if word1[c] != word2[c] and (word1[c] not in alphabet or word2[c] not in alphabet):
             order = word1[c] + word2[c]
             return order
