@@ -79,20 +79,15 @@ def add(dic, alphabet):
                 alphabet.append(c)
                 
 def main():
-    
-    dictionary = ['ART', 'TAT', 'CAT', 'CAR']
-    assert find_alphabet(dictionary) == ['A', 'T', 'R', 'C']
+     
+    assert find_alphabet(['ART', 'TAT', 'CAT', 'CAR']) == ['A', 'T', 'R', 'C']
 
-    dictionary_2 = ['ART', 'ARC', 'ACD', 'CAT', 'CRC']
-    assert find_alphabet(dictionary_2) == ['A', 'T', 'R', 'C', 'D']
+    assert find_alphabet(['ART', 'ARC', 'ACD', 'CAT', 'CRC']) == ['A', 'T', 'R', 'C', 'D']
 
-    dictionary_3 = ['BACD', 'BACE', 'ACDE']
-    assert find_alphabet(dictionary_3) == ['B', 'D', 'E', 'A', 'C']
+    assert find_alphabet(['BACD', 'BACE', 'ACDE']) == ['B', 'D', 'E', 'A', 'C']
 
-    dictionary_4 = ['FG']
-    assert find_alphabet(dictionary_4) == ['F', 'G']
+    assert find_alphabet(['FG']) == ['F', 'G']
 
-    dictionary_5 = ['aBC', 'aDB', 'CDA']
-    assert find_alphabet(dictionary_5) == ['a', 'B', 'D', 'C', 'A']
+    assert find_alphabet(['aBC', 'aDB', 'CDA']) == ['a', 'B', 'D', 'C', 'A']
 if __name__ == '__main__':
     main()
