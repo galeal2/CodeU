@@ -8,7 +8,7 @@ def rearrange_cars(cars,order):
         Returns a list that contains all the moves made to get the rearrangement        
                 
     '''
-    empty = find_zero(cars) 
+    empty = cars.index(0)
     moves = []
     dic = build_dic(order)
     for i in range(len(cars)):
@@ -37,16 +37,6 @@ def build_dic(lst):
     for i in range(len(lst)):
         dic[lst[i]] = i
     return dic
-
-def find_zero(lst):
-    '''
-        Input: a list of integers
-        Returns: position of zero (0) in the list
-    '''
-    for i in range(len(lst)):
-        if lst[i] == 0:
-            return i
-
 
 
 def main():
