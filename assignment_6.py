@@ -1,6 +1,6 @@
 # Rearranging cars
 
-def rearrange_cars(cars,order):
+def rearrange_cars(cars, order):
     '''
         Input: - 2 list of integers
                 cars =  a list of integers that represents the cars
@@ -12,8 +12,8 @@ def rearrange_cars(cars,order):
     moves = []
     dic = build_dic(order)
     for i in range(len(cars)):
-        if cars[i] != order[i] and cars[i]!= 0:
-            car_pos = dic[cars[i]]      
+        if cars[i] != order[i] and cars[i] != 0:
+            car_pos = dic[cars[i]]
             
             if car_pos != empty:
                 moves.append('move from {} to {}'.format(empty, car_pos))
