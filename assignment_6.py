@@ -24,7 +24,7 @@ def rearrange_cars(cars, order):
     
             cars[i], cars[empty] = cars[empty], cars[i]
             empty = i
-
+            
     return moves   
             
 
