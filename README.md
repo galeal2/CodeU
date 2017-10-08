@@ -1,2 +1,2 @@
-# CodeU
+# Google CodeU Program
 CodeU assignments
